@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Doctor's portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
+    <script src='func.js'></script>
+</head>
+<body>
+    <img src="Administrative-Map-of-Rwanda.png" usemap="#image-map">
+    <map name="image-map">
+        <area class="open-button" id="musanze"
+        target="_self" alt="musanze" title="musanze" href="#" onClick="" coords="308,188,312,170,307,156,328,146,352,149,381,185,338,197" shape="poly" >
+        <area target="" alt="rubavu" title="rubavu" href="#" coords="244,247,236,219,275,178,284,209,285,236" shape="poly" class="open-button" id="rubavu">
+        <area target="" alt="rutsiro" title="rutsiro" href="#" coords="244,284,250,248,289,240,286,260,322,324,282,323,259,306" shape="poly" class="open-button" id="rutsiro">
+        <area target="" alt="muhanga" title="muhanga" href="#" coords="344,343,362,242,378,252,393,276,389,329,388,349" shape="poly" class="open-button" id="muhanga" >
+        <area target="" alt="nyarugenge" title="nyarugenge" href="#" coords="466,329,466,294,446,285,452,312,447,328" shape="poly" class="open-button" id="nyarugenge">
+        <area target="" alt="karongi" title="karongi" href="#" coords="242,345,280,325,342,336,338,364,291,385,261,390,253,368" shape="poly" class="open-button" id="karongi">
+        <area target="" alt="ruhango" title="ruhango" href="#" coords="333,380,349,346,390,353,414,344,442,372,426,374,417,387,392,384" shape="poly" class="open-button" id="ruhango">
+        <area target="" alt="nyamasheke" title="nyamasheke" href="#" coords="237,358,215,382,198,403,176,400,163,440,186,462,256,413,254,374" shape="poly" class="open-button" id="nyamasheke">
+        <area target="" alt="huye" class="open-button" id="huye" title="huye" href="#" coords="389,416,362,422,348,431,336,445,334,458,338,471,347,488,356,489,360,500,370,502,378,500,383,484,384,455,394,448,402,436,399,426" shape="poly">
+        <area target="" alt="rusizi" class="open-button" id="rusizi" title="rusizi" href="#" coords="158,421,142,428,142,445,136,451,138,466,142,478,143,489,146,498,155,503,162,501,168,504,173,507,182,508,181,496,184,486,188,478,234,486,225,476,162,450" shape="poly">
+    </map>
+
+    <div id="Nyarugenge" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+
+    <div id="Rutsiro" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+
+    <div id="Muhanga" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+    <div id="Karongi" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+    <div id="Musanze" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>1. Branch office: in good condition</p>
+          <p>1. Store: in good condition</p>
+        </div>
+    </div>
+
+    <div id="Rubavu" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+
+    <div id="Ruhango" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+
+    <div id="Huye" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+    <div id="Rusizi" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+
+    <div id="Nyamasheke" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Mukungwa </p>
+          <p>12 residentail houses to be painted.</p>
+          <p>Cabins:  14 houses.</p>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("Musanze");
+        var btn = document.getElementById("musanze");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("Rubavu");
+    var btn = document.getElementById("rubavu");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("Ruhango");
+    var btn = document.getElementById("ruhango");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("Muhanga");
+    var btn = document.getElementById("muhanga");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("Rutsiro");
+    var btn = document.getElementById("rutsiro");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("Karongi");
+    var btn = document.getElementById("karongi");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("Huye");
+    var btn = document.getElementById("huye");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("Nyamasheke");
+    var btn = document.getElementById("nyamasheke");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("Nyarugenge");
+    var btn = document.getElementById("nyarugenge");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("Rusizi");
+    var btn = document.getElementById("rusizi");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+
+</body>
+</html>
